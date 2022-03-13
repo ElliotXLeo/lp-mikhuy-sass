@@ -10,13 +10,65 @@
 </head>
 
 <body class="body">
-  <main class="main">
-    <section class="hero">
-      <h1>Restaurante Chanchirata, La mejor comida criolla</h1>
-      <p>❤ El mejor restaurante de comida Peruana. El verdadero lugar con las 4B. Bueno, Bonito, Barato y Bastante.
-        Siempre con fe y humildad ❤</p>
-    </section>
+  <header class="header">
+    <nav class="header-nav">
+      <div class="header-nav-container">
+        <a href="#hero" class="header-nav__link-logo-container">
+          🍲
+        </a>
+        <ul class="header-nav__link-list" id="headerNavLinkList">
+          <li class="header-nav__link-item">
+            <a href="#hero" class="header-nav__link header-nav__link--focus">Chanchirata</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#menu" class="header-nav__link">Menú</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#reservas" class="header-nav__link">Reservas</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#contacto" class="header-nav__link">Contacto</a>
+          </li>
+          <li class="header-nav__link-item">
+            <a href="#" class="header-nav__link">Elliot</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
+  <main class="main">
+    <article class="hero">
+      <div class="hero-container">
+        <div class="hero__message">
+          <h2 class="hero__message-title">
+            Restaurante Chanchirata, La mejor comida criolla
+            </h1>
+            <h1 class="hero__message-subtitle">
+              El mejor restaurante de comida Peruana.
+          </h2>
+          <p class="hero__message-paragraph">
+            ❤ El verdadero lugar con las 4B. Bueno, Bonito, Barato y Bastante. Siempre con fe y humildad ❤
+          </p>
+
+          <div class="hero__message-shopping-container">
+            <div class="hero__message-cheapest-price-container">
+              <div class="hero__message-cheapest-price--normal">$7.90</div>
+              <div class="hero__message-cheapest-price--offer">$6.90</div>
+            </div>
+            <a href="#" class="hero__message-buy-button">
+              Ordenar
+            </a>
+          </div>
+        </div>
+
+        <div class="hero__figure">
+          <figure class="hero__figure-image-container">
+            <img src="./public/img/hero.png" alt="Imagen de portada" class="hero__figure-image" />
+          </figure>
+        </div>
+      </div>
+    </article>
   </main>
 </body>
 
