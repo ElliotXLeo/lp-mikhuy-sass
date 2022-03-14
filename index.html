@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Restaurante Chanchirata, La mejor comida criolla</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="./public/css/index.css" />
   <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
 </head>
 
@@ -16,9 +21,12 @@
         <a href="#hero" class="header-nav__link-logo-container">
           🍲
         </a>
+        <button class="header-nav__menu-icon-container" id="headerNavMenuIconContainer">
+          <img src="./public/img/menu.svg" alt="Ícono de menú" class="header-nav__menu-icon" />
+        </button>
         <ul class="header-nav__link-list" id="headerNavLinkList">
           <li class="header-nav__link-item">
-            <a href="#hero" class="header-nav__link header-nav__link--focus">Chanchirata</a>
+            <a href="#hero" class="header-nav__link">Chanchirata</a>
           </li>
           <li class="header-nav__link-item">
             <a href="#menu" class="header-nav__link">Menú</a>
@@ -30,7 +38,12 @@
             <a href="#contacto" class="header-nav__link">Contacto</a>
           </li>
           <li class="header-nav__link-item">
-            <a href="#" class="header-nav__link">Elliot</a>
+            <a href="https://www.linkedin.com/in/elliotgaramendi/" class="header-nav__link header-nav__link--active"
+              target="_blank">Elliot</a>
+          </li>
+          <li class="header-nav__link-item header-nav__link-item--close-icon-container"
+            id="headerNavCloseIconContainer">
+            <img src="./public/img/close.svg" alt="Ícono de cierre de menú" class="header-nav__close-icon" />
           </li>
         </ul>
       </div>
@@ -53,15 +66,14 @@
 
           <div class="hero__message-shopping-container">
             <div class="hero__message-cheapest-price-container">
-              <div class="hero__message-cheapest-price--normal">$7.90</div>
-              <div class="hero__message-cheapest-price--offer">$6.90</div>
+              <div class="hero__message-cheapest-price hero__message-cheapest-price--normal">$7.90</div>
+              <div class="hero__message-cheapest-price hero__message-cheapest-price--offer">$6.90</div>
             </div>
             <a href="#" class="hero__message-buy-button">
               Ordenar
             </a>
           </div>
         </div>
-
         <div class="hero__figure">
           <figure class="hero__figure-image-container">
             <img src="./public/img/hero.png" alt="Imagen de portada" class="hero__figure-image" />
@@ -70,6 +82,8 @@
       </div>
     </article>
   </main>
+
+  <script src="./public/js/index.js" type="module"></script>
 </body>
 
 </html>
