@@ -142,8 +142,8 @@
   align-items: center;
   justify-content: center;
   gap: 0;
-  background-image: linear-gradient(to top, var(--secondary-theme-color), var(--primary-theme-color));
   position: relative;
+  overflow: hidden;
   min-height: 100vh;
 }
 .hero__message {
@@ -230,6 +230,131 @@
   }
 }
 .hero__figure-image {
+  width: 100%;
+}
+.hero__rise-container {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+@media (min-width: 854px) {
+  .hero__rise-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: -5%;
+    left: 5%;
+    width: 25%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+.hero__rise {
+  width: 100%;
+}
+.hero__arrow-container {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 10%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+@media (min-width: 854px) {
+  .hero__arrow-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: 100%;
+    left: 10%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+.hero__arrow {
+  width: 100%;
+}
+.hero__bubbles-container {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 105%;
+  width: 50%;
+  transform: translate(-50%, -50%) rotate(180deg);
+  margin: 0;
+}
+@media (min-width: 854px) {
+  .hero__bubbles-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: -5%;
+    left: 50%;
+    width: 25%;
+    transform: translate(-50%, -50%) rotate(90deg);
+    margin: 0;
+  }
+}
+.hero__bubbles {
+  width: 100%;
+}
+.hero__blob-container {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+@media (min-width: 854px) {
+  .hero__blob-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: 80%;
+    left: 100%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+.hero__blob {
+  width: 100%;
+}
+.hero__asterisk-container {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: 100%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+}
+@media (min-width: 854px) {
+  .hero__asterisk-container {
+    display: flex;
+    position: absolute;
+    z-index: -1;
+    top: 80%;
+    left: 100%;
+    width: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+  }
+}
+.hero__asterisk {
   width: 100%;
 }
 

@@ -27,6 +27,17 @@
   }
 }
 
+@mixin decorator($top: 0, $left: 0, $width: 100%, $transform: translate(-50%, -50%)) {
+  display: flex;
+  position: absolute;
+  z-index: -1;
+  top: $top;
+  left: $left;
+  width: $width;
+  transform: $transform;
+  margin: 0;
+}
+
 @mixin desktop() {
   @media (min-width: 854px) {
     @content;
@@ -155,14 +166,15 @@
 
 .hero {
   @include d-flex-fd-ai-jc-g(row, center, center, 0);
-  background-image: linear-gradient(to top, var(--secondary-theme-color), var(--primary-theme-color));
+  // background-image: linear-gradient(to top, var(--secondary-theme-color), var(--primary-theme-color));
   position: relative;
+  overflow: hidden;
   min-height: 100vh;
 
   &__message {
     @include d-flex-fd-ai-jc-g(column, stretch, center, 1rem);
     text-align: center;
-    
+
     @include desktop() {
       text-align: start;
       gap: 2rem;
@@ -232,6 +244,61 @@
   }
 
   &__figure-image {
+    width: 100%;
+  }
+
+  &__rise-container {
+    @include decorator($top: 0, $left: 0, $width: 50%, $transform: translate(-50%, -50%));
+    @include desktop() {
+      @include decorator($top: -5%, $left: 5%, $width: 25%, $transform: translate(-50%, -50%));
+    }
+  }
+
+  &__rise {
+    width: 100%;
+  }
+
+  &__arrow-container {
+    @include decorator($top: 50%, $left: 10%, $width: 50%, $transform: translate(-50%, -50%));
+    @include desktop() {
+      @include decorator($top: 100%, $left: 10%, $width: 50%, $transform: translate(-50%, -50%));
+    }
+  }
+
+  &__arrow {
+    width: 100%;
+  }
+
+  &__bubbles-container {
+    @include decorator($top: 50%, $left: 105%, $width: 50%, $transform: translate(-50%, -50%) rotate(180deg));
+    @include desktop() {
+      @include decorator($top: -5%, $left: 50%, $width: 25%, $transform: translate(-50%, -50%) rotate(90deg));
+    }
+  }
+
+  &__bubbles {
+    width: 100%;
+  }
+
+  &__blob-container {
+    @include decorator($top: 100%, $left: 50%, $width: 100%, $transform: translate(-50%, -50%));
+    @include desktop() {
+      @include decorator($top: 80%, $left: 100%, $width: 100%, $transform: translate(-50%, -50%));
+    }
+  }
+
+  &__blob {
+    width: 100%;
+  }
+
+  &__asterisk-container {
+    @include decorator($top: 100%, $left: 50%, $width: 50%, $transform: translate(-50%, -50%));
+    @include desktop() {
+      @include decorator($top: 80%, $left: 100%, $width: 50%, $transform: translate(-50%, -50%));
+    }
+  }
+
+  &__asterisk {
     width: 100%;
   }
 }
